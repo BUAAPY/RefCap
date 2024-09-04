@@ -1,0 +1,12 @@
+*.zip
+*.json
+*.hdf5
+meta/
+results/
+*.jpg
+*.png
+*.mp4
+*.pt
+*d.txt
+*.pyc
+*/__pycache__/

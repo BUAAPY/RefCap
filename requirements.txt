@@ -1,0 +1,11 @@
+ffmpeg_python==0.2.0
+numpy==2.1.0
+Pillow==10.4.0
+PyYAML==6.0.2
+sentence_transformers==3.0.0
+spacy==3.7.5
+torch==2.2.0
+torchtext==0.17.0
+tqdm==4.64.1
+transformers==4.41.2
+typing_extensions==4.12.2
