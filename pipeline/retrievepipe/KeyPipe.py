@@ -117,7 +117,7 @@ class KeyInferPipe(BaseRetrievePipe):
             max_vcmr_prop_cnts = min(self.cfg.max_vcmr_props, Np)
             topk_cap_sims, topk_cap_ids = torch.topk(esm_sims, max_vcmr_prop_cnts, dim=1) # [Nq, 1000]
             
-            for i in range(Nq):  # 这里目前用的是纯句子相似度,即video-level和event-level是分开的
+            for i in range(Nq):
                 sel_cap_ids = topk_cap_ids[i]# [1000]
                 sel_cap_sims = topk_cap_sims[i].tolist() 
                 sel_node_ids = self.captree.cap_to_nodeid[sel_cap_ids].tolist()

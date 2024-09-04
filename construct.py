@@ -1,6 +1,6 @@
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
-os.environ["CUDA_VISIBLE_DEVICES"]='1'
+os.environ["CUDA_VISIBLE_DEVICES"]='0'
 from pipeline.denoiser import * 
 from pipeline.denoiser.base import get_denoiser_class
 from pipeline.treebuilder import *

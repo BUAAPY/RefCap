@@ -1,10 +1,10 @@
 #!/bin/bash
-collection=activitynet           # charades, activitynet
+collection=charades                 # charades, activitynet
 caption_generator=minigpt           # minigpt, blip
 video_root=/dir/to/videos 
 
 construct_name=minigpt_window_it
-caption_denoiser=window                 # base(nodenoising), window
+caption_denoiser=window                     # base(nodenoising), window
 prop_sim_type=it                            # it, txt, vis
 
 construct_pipeline=base 
@@ -21,6 +21,7 @@ num_samples=-1
 seed=42
 
 ## Model
+# Optional: replace with local paths for HF models
 caption_model=blip-image-captioning-large
 blip_itm_model=blip-itm-base-coco
 sentence_transformer=paraphrase-distilroberta-v2

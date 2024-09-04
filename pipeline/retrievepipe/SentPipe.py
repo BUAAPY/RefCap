@@ -23,7 +23,7 @@ class SentInferPipe(BaseRetrievePipe):
             # import pdb; pdb.set_trace() 
             desc_features = self.captree.encode_caps(descs)
             # print(desc_features.shape)
-            cos_sims = sent_util.cos_sim(desc_features, self.captree.cap_features) # [Nq, Nc]  和所有的caption的相似度(caption数量大于视频数量)
+            cos_sims = sent_util.cos_sim(desc_features, self.captree.cap_features) # [Nq, Nc]
             Nq, Nv = len(descs), len(self.captree.vidname_to_capids)
 
             scores = torch.zeros((Nq, Nv)).to(self.cfg.device)

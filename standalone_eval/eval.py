@@ -73,13 +73,12 @@ def get_rounded_percentage(float_number, n_floats=2):
     return round(float_number * 100, n_floats)
 
 
-TASK_TYPES = OrderedDict([   # 三种任务
+TASK_TYPES = OrderedDict([
     ("VCMR", "Video Corpus Moment Retrieval"),
     ("SVMR", "Single Video Moment Retrieval"),
     ("VR", "regular Video Retrieval")
 ])
 
-# 核心评测
 def eval_by_task_type(moment_predictions, video2idx, ground_truth,
                      iou_thds=(0.5, 0.7), recall_topks=(1, 5, 10, 100),
                      task_type="SVMR", max_pred_per_query=100, match_number=True, verbose=True, use_desc_type=True):
