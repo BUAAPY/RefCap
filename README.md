@@ -82,7 +82,7 @@ python -m spacy download en_core_web_sm
     python genCaptions_minigpt.py --collection $collection --save_dir $save_dir --video_root $video_root --split_json_path $split_json_path --temperature $temperature
     ```
 
-  * Generated captions will be saved in `$save_dir/${collection}_minigpt.jsonl`
+  * Generated captions will be saved in `${save_dir}/${collection}_minigpt.jsonl`
   * Intermediate results are also provided in  [Baidu Cloud Disk]( https://pan.baidu.com/s/1Sn41an8cpd9qbKMTQX2GkA?pwd=tmi3 )  and [Google Drive](https://drive.google.com/drive/folders/1HI2jraauWR_ilAJC5N7y0gk1rvY1w5fM?usp=drive_link)
 
 * Other operations are the same as BLIP:
