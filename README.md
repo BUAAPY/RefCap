@@ -20,7 +20,7 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-* follow [Glove](https://github.com/stanfordnlp/GloVe) to prepare glove weights, and replace them in `meta` folder:
+* follow [Glove](https://github.com/stanfordnlp/GloVe) to prepare glove weights, and place them in `meta` folder:
 
   * ```
     meta
